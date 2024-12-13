@@ -1,5 +1,7 @@
 package com.vividly.awesomethings;
 
+import com.vividly.awesomethings.block.ModBlocks;
+import com.vividly.awesomethings.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class AwesomeThings implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
